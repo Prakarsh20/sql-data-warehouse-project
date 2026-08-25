@@ -64,10 +64,8 @@ The analysis will be performed using SQL queries on the data warehouse.
 
 - **SQL Server** - Database and data warehouse
 - **SQL Server Management Studio (SSMS)** - Database management and SQL development
-- **Draw.io** - Data architecture and data model diagrams
-- **Git and GitHub** - Version control
 
----
+ ---
 
 ## Repository Structure
 
@@ -76,13 +74,9 @@ data-warehouse-project/
 |
 ├── datasets/                    # Source CSV datasets
 |
-├── docs/                        # Project documentation and diagrams
-|   ├── etl.drawio
-|   ├── data_architecture.drawio
-|   ├── data_catalog.md
-|   ├── data_flow.drawio
-|   ├── data_models.drawio
-|   └── naming-conventions.md
+├── docs/                        # Project documentation
+|   ├── data_catalog.md          # Dataset and column descriptions
+|   └── naming-conventions.md    # Naming conventions used in the project
 |
 ├── scripts/                     # SQL scripts
 |   ├── bronze/                  # Raw data loading
@@ -91,5 +85,5 @@ data-warehouse-project/
 |
 ├── tests/                       # Data quality and validation scripts
 |
-├── README.md
-└── .gitignore
+├── README.md                    # Project documentation
+└── .gitignore                   # Git ignore rules
