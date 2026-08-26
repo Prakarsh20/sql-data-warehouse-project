@@ -12,8 +12,6 @@ The project uses a three-layer architecture:
 - **Silver Layer** - Contains cleaned and transformed data.
 - **Gold Layer** - Contains the final data used for analysis and reporting.
 
-![Data Architecture](docs/data_architecture.png)
-
 ---
 
 ## Project Overview
