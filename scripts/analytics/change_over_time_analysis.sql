@@ -1,3 +1,11 @@
+/*
+===============================================================================
+Change Over Time Analysis
+===============================================================================
+Purpose:
+    Analyzes sales trends, customer activity, and quantity over time.
+===============================================================================
+*/
 -- Analyze sales performance over time
 
 SELECT
