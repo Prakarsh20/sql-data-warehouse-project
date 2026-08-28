@@ -1,3 +1,11 @@
+/*
+===============================================================================
+Product Report
+===============================================================================
+Purpose:
+    Provides product-level metrics, performance segments, and sales behavior.
+===============================================================================
+*/
 IF OBJECT_ID('gold.report_products', 'V') IS NOT NULL
     DROP VIEW gold.report_products;
 GO
