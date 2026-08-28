@@ -1,29 +1,29 @@
 # SQL Data Warehouse and Analytics Project
-
-A data warehouse project built using SQL Server. This project covers data loading, ETL processes, data cleaning, data modeling, and data analysis.
+A data warehouse and analytics project built using SQL Server. This project covers data loading, ETL processes, data cleaning, data modeling, data quality validation, and business-focused data analysis.
 
 ---
-
 ## Data Architecture
 
 The project uses a three-layer architecture:
 
 - **Bronze Layer** - Stores the raw data loaded from CSV files.
 - **Silver Layer** - Contains cleaned and transformed data.
-- **Gold Layer** - Contains the final data used for analysis and reporting.
+- **Gold Layer** - Contains the final business-ready data used for analysis and reporting.
 
 ---
 
 ## Project Overview
 
-The main goal of this project is to build a data warehouse using SQL Server and prepare the data for analysis.
+The main goal of this project is to build a SQL Server data warehouse that integrates data from different source systems and prepares it for reliable analysis.
 
 The project includes:
 
 1. **Data Architecture** - Designing the warehouse using Bronze, Silver, and Gold layers.
-2. **ETL Processes** - Loading data from CSV files, cleaning it, and transforming it.
+2. **ETL Processes** - Loading data from CSV files, cleaning it, and transforming it into structured datasets.
 3. **Data Modeling** - Creating fact and dimension tables using a star schema.
-4. **Data Analysis** - Writing SQL queries to analyze customers, products, and sales.
+4. **Data Quality** - Validating the data and checking for common data quality issues.
+5. **Data Analysis** - Using SQL to analyze customers, products, sales trends, and key business metrics.
+6. **Reporting** - Creating customer and product reports with useful business KPIs.
 
 ---
 
@@ -45,16 +45,46 @@ Build a SQL Server data warehouse that combines sales data from different source
 
 ---
 
-### Analytics and Reporting
+## Analytics and Reporting
 
-The data warehouse will be used to analyze:
+The Gold layer provides business-ready data that can be used to analyze sales performance, customer behavior, and product performance.
 
-- **Customer Behavior**
-- **Product Performance**
-- **Sales Trends**
-- **Key Business Metrics**
+The analytics layer uses SQL queries to answer common business questions and identify useful patterns in the data.
 
-The analysis will be performed using SQL queries on the data warehouse.
+### Analysis Areas
+
+- **Change Over Time Analysis** - Analyze sales, customers, and quantities over different time periods to identify trends and changes.
+- **Cumulative Analysis** - Calculate running totals and moving averages to understand performance over time.
+- **Performance Analysis** - Compare product performance with previous periods and average performance using year-over-year analysis.
+- **Data Segmentation** - Group products and customers into meaningful segments based on cost, spending, and customer lifespan.
+- **Part-to-Whole Analysis** - Calculate how much each product category contributes to overall sales.
+
+### Customer and Product Reports
+
+The project also includes customer and product reports that combine multiple business metrics into structured analytical views.
+
+**Customer Report** includes:
+
+- Customer information and age groups
+- Customer segments such as VIP, Regular, and New
+- Total orders and sales
+- Total quantity and products purchased
+- Customer lifespan and recency
+- Average order value
+- Average monthly spending
+
+**Product Report** includes:
+
+- Product and category information
+- Product performance segments
+- Total orders and customers
+- Total sales and quantity sold
+- Product lifespan and recency
+- Average selling price
+- Average order revenue
+- Average monthly revenue
+
+These reports make the Gold layer easier to use for further analysis, reporting, and business decision-making.
 
 ---
 
@@ -62,26 +92,26 @@ The analysis will be performed using SQL queries on the data warehouse.
 
 - **SQL Server** - Database and data warehouse
 - **SQL Server Management Studio (SSMS)** - Database management and SQL development
+- **SQL** - Data transformation, analysis, reporting, and validation
 
- ---
+---
 
 ## Repository Structure
 
 ```text
-data-warehouse-project/
+sql-data-warehouse-project/
 |
 ├── datasets/                    # Source CSV datasets
 |
 ├── docs/                        # Project documentation
-|   ├── data_catalog.md          # Dataset and column descriptions
-|   └── naming-conventions.md    # Naming conventions used in the project
+|   └── data_catalog.md          # Dataset and column descriptions
 |
 ├── scripts/                     # SQL scripts
 |   ├── bronze/                  # Raw data loading
 |   ├── silver/                  # Data cleaning and transformation
-|   └── gold/                    # Analytical data models
+|   ├── gold/                    # Analytical data models
+|   └── analytics/               # Business analysis and reporting
 |
 ├── tests/                       # Data quality and validation scripts
 |
 ├── README.md                    # Project documentation
-└── .gitignore                   # Git ignore rules
