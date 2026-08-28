@@ -1,3 +1,11 @@
+/*
+===============================================================================
+Performance Analysis
+===============================================================================
+Purpose:
+    Compares product sales performance across years to identify trends and changes.
+===============================================================================
+*/
 WITH yearly_product_sales AS (
     SELECT
         YEAR(f.order_date) AS order_year,
