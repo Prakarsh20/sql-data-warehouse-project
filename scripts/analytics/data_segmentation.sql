@@ -1,3 +1,11 @@
+/*
+===============================================================================
+Data Segmentation Analysis
+===============================================================================
+Purpose:
+    Groups products and customers into meaningful segments for analysis.
+===============================================================================
+*/
 WITH product_segments AS (
     SELECT
         product_key,
