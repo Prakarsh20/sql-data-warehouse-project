@@ -1,3 +1,11 @@
+/*
+===============================================================================
+Cumulative Analysis
+===============================================================================
+Purpose:
+    Calculates running totals and moving averages to evaluate performance over time.
+===============================================================================
+*/
 SELECT
     order_date,
     total_sales,
