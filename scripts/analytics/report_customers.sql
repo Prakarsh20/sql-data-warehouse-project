@@ -1,3 +1,11 @@
+/*
+===============================================================================
+Customer Report
+===============================================================================
+Purpose:
+    Provides customer-level metrics, segments, and purchasing behavior.
+===============================================================================
+*/
 IF OBJECT_ID('gold.report_customers', 'V') IS NOT NULL
     DROP VIEW gold.report_customers;
 GO
