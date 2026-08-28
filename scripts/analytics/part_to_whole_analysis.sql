@@ -1,3 +1,11 @@
+/*
+===============================================================================
+Part-to-Whole Analysis
+===============================================================================
+Purpose:
+    Evaluates category-level sales contribution relative to overall sales.
+===============================================================================
+*/
 WITH category_sales AS (
     SELECT
         p.category,
